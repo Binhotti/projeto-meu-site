@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: linear-gradient(135deg#111827 0%,#1f2937 100%);
+}
+
+.header {
+    background-color: #898989;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.header .name {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    gap: 32px; 
+}
+
+.header a {
+    text-decoration: none;
+    color: #ff9800; 
+    position: relative;
+    transition: color 0.3s;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: red;
+}
+
+.header a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, orange, red, rgb(225, 159, 4));
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s;
+    border-radius: 2px;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
