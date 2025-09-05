@@ -1,14 +1,14 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: linear-gradient(135deg#111827 0%,#1f2937 100%);
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
 }
 
 .header {
-    background-color: #898989;
+    background-color: #1f2937;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .header .name {
@@ -20,12 +20,12 @@ body {
 
 .header nav {
     display: flex;
-    gap: 32px; 
+    gap: 32px;
 }
 
 .header a {
     text-decoration: none;
-    color: #ff9800; 
+    color: #ffffff;
     position: relative;
     transition: color 0.3s;
     font-size: 18px;
@@ -33,7 +33,7 @@ body {
 }
 
 .header a:hover {
-    color: red;
+    color: rgb(10, 122, 201);
 }
 
 .header a::after {
@@ -41,7 +41,7 @@ body {
     display: block;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, orange, red, rgb(225, 159, 4));
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -51,4 +51,58 @@ body {
 
 .header a:hover::after {
     width: 100%;
+}
+
+.header .name p {
+    background: linear-gradient(90deg, #ffffff, #e3e9ff, #8ea4e8, #f8fafc, #86a1b8, #f3f4f6, #cfd8dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 40px;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+    min-height: 70vh;
+}
+
+.container > div {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+}
+
+.container h1, .container p {
+    margin-left: 0;
+}
+
+.container img {
+    width: 400px;
+    height: auto;
+    border-radius: 80px;
+    margin-right: 15px;
+    transition:
+        filter 0.4s cubic-bezier(.68, -0.55, .27, 1.55),
+        transform 0.4s cubic-bezier(.68, -0.55, .27, 1.55),
+        box-shadow 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
+    box-shadow: 0 4px 32px 0 rgba(180, 220, 255, 0.25);
+}
+
+.container img:hover {
+    filter: brightness(1.08);
+    transform: scale(1.04);
+    box-shadow: 0 8px 48px 0 rgba(180, 220, 255, 0.35);
 }
