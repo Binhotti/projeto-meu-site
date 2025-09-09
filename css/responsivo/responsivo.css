@@ -1,0 +1,48 @@
+@media (max-width: 600px) {
+    #projects {
+        padding: 10px;
+    }
+
+    #projects h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card img {
+        height: 160px; 
+    }
+
+    .project-info {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .tags span {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .project-info a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 24px;
+    }
+}
